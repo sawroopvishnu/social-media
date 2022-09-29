@@ -62,13 +62,13 @@ public class UserServiceImplementation implements UserServices {
 
 
     //converting from Dto to user
-    private User dtoToUser(UserDto userDto){
+    public User dtoToUser(UserDto userDto){
         User user = this.modelMapper.map(userDto, User.class);
         return user;
     }
 
     //converting from user to dto
-    private UserDto userToDto(User user){
+    public UserDto userToDto(User user){
         UserDto userDto = this.modelMapper.map(user, UserDto.class);
         return userDto;
     }
