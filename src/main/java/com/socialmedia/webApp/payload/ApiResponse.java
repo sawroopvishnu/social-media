@@ -11,6 +11,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class ApiResponse {
 
+	// delete msg response
 	private String message;
 	private  boolean success;
 }
